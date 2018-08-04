@@ -5,8 +5,6 @@ const client = new Discord.Client()
 const ytdl = require('ytdl-core');
 const queue = new Map();
 
-client.login(process.env.BattleSong);
-
 var servers = {};
 var prefix = ';';
 client.on("message", async message => {
@@ -191,4 +189,4 @@ async function handleVideo(video, message, voiceChannel, playlist = false) {
 	serverQueue.textChannel.send(`🎶 Começa a tocar agora: **${song.title}**`)
 }
 });
-
+client.login(process.env.BattleSong);
