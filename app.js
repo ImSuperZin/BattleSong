@@ -6,7 +6,7 @@ const ytdl = require('ytdl-core');
 const queue = new Map();
 
 var servers = {};
-var prefix = ';';
+var prefix = 'b;';
 client.on("message", async message => {
     var args = message.content.substring(prefix.length).split(" ");
     if (!message.content.startsWith(prefix)) return;
@@ -120,7 +120,7 @@ break;
 case "ajuda":
 	const ajuda = new Discord.RichEmbed()
 		.setTitle("AJUDA")
-		.setDescription("**Comandos de música**\n`;tocar <música ou link>` - Irá tocar uma música.\n`;pular` - Irá pular uma música.\n`;parar` - Irá excluir a playlist.\n`;tocando` - Irá mostrar a música que está tocando\n`;playlist` - Irá mostrar as músicas que estão na lista\n`;pausar` - Irá pausar a música.\n`;resumir` - Irá retomar uma música pausada")
+		.setDescription("**Comandos de música**\n`b;tocar <música ou link>` - Irá tocar uma música.\n`b;pular` - Irá pular uma música.\n`b;parar` - Irá excluir a playlist.\n`b;tocando` - Irá mostrar a música que está tocando\n`b;playlist` - Irá mostrar as músicas que estão na lista\n`b;pausar` - Irá pausar a música.\n`b;resumir` - Irá retomar uma música pausada")
 		.setColor("#FFFFF")
 		.setFooter("BattleSong - Todos os direitos reservados")
 		message.channel.send(ajuda)
