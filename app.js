@@ -14,8 +14,13 @@ client.on("message", async message => {
 	var url = args[1] ? args[1].replace(/<(.+)>/g, '$1') : '';
 	var serverQueue = queue.get(message.guild.id);
     switch (args[0].toLowerCase()) {
-	
-      case "tocar":
+    switch (args[0].toLowerCase()) {
+    switch (args[0].toLowerCase()) {
+    switch (args[0].toLowerCase()) {
+    switch (args[0].toLowerCase()) {
+    switch (args[0].toLowerCase()) {
+    switch (args[0].toLowerCase()) {
+   case "tocar":
     var voiceChannel = message.member.voiceChannel;
 		if (!voiceChannel) return message.channel.send('Me desculpe, mas você precisa estar em um canal de voz para tocar música!');
 		var permissions = voiceChannel.permissionsFor(message.client.user);
@@ -190,7 +195,6 @@ async function handleVideo(video, message, voiceChannel, playlist = false) {
 	serverQueue.textChannel.send(`🎶 Começa a tocar agora: **${song.title}**`)
 }
 });
-
-
 }
+
 client.login(process.env.BattleSong);
